@@ -1,0 +1,21 @@
+{
+  "name": "pallad-flow",
+  "version": "1.0.0",
+  "description": "Demo of Mina Credentials presentation flow in TypeScript",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "ts-node --esm src/index.ts"
+  },
+  "dependencies": {
+    "o1js": "^2.1.0",
+    "mina-credentials": "../private-credentials/mina-attestations/mina-credentials-0.2.6.tgz"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "@types/node": "^20.10.5"
+  }
+}
